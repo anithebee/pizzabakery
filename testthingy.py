@@ -49,8 +49,10 @@ if toppingschoice == 5 :
     st.write("hippie waiter: PINEAPPLE IS SUCH A GOOD TOPPING, I DONT CARE WHAT ANYONE SAYS, BYGODISWEARTHATTHESWEETMAKESTHESAVOUR- *nervous breakdown*")
 if toppingschoice == 0:
     extracost = 0
-if toppingschoice<0 or toppingschoice>5:
-    st.write("Our waiter is very confused. Can you read?")
+
+if toppingschoice != 0 and toppingschoice != 1 and toppingschoice != 2 and toppingschoice != 3 and toppingschoice != 4 and toppingschoice != 5:
+     st.write("Our waiter is very confused. Can you read?")
+    
 
 if toppingschoice ==  0 and number_of_pizzas == 1:
     st.write(number_of_pizzas, " Margherita Pizza coming right up!...")
