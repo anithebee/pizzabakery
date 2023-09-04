@@ -75,7 +75,7 @@ if toppingschoice ==  5 and number_of_pizzas>1:
     st.write(number_of_pizzas, " Pineapple Pizzas coming right up!...")
 
 if toppingschoice != 0:
-    subtotal = number_of_pizzas * (cost_per_pizza * extracost)
+    subtotal = number_of_pizzas * (cost_per_pizza + extracost)
     st.write("The cost before tax is: ", subtotal)
     tax_rate = 0.08
     sales_tax = subtotal * tax_rate
