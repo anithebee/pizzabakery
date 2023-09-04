@@ -14,6 +14,10 @@ st.write(":chicken: :cheese_wedge: :olive: :pineapple:")
 number_of_pizzas  = st.number_input("How many pizzas do you want?")
 if number_of_pizzas<0:
     st.write("You want...less than 1 pizza-? A negative pizza? STOP TORMENTING OUR WAITERS!")
+    fornow1 = 0
+    fornow2 = 0
+    fornow3 = 0
+    fornow4 = 0
 if number_of_pizzas == 0:
     st.write("why are you even here?")
 if number_of_pizzas>30:
@@ -80,11 +84,11 @@ if toppingschoice != 0:
     tax_rate = 0.08
     sales_tax = subtotal * tax_rate
     total = subtotal + sales_tax
-    st.write("The total cost is $", total)
-    st.write("This includes ", subtotal, " coins for the food and  ", sales_tax, " coins in sales tax.")
+   fornow3 =  st.write("The total cost is $", total)
+   fornow4 = st.write("This includes ", subtotal, " coins for the food and  ", sales_tax, " coins in sales tax.")
 
 if toppingschoice == 0:
-    st.write("The cost before tax is: ", number_of_pizzas * cost_per_pizza)
-    st.write("The total cost is ", (number_of_pizzas * cost_per_pizza)+ ((number_of_pizzas * cost_per_pizza) * 0.08))
+    fornow1 = st.write("The cost before tax is: ", number_of_pizzas * cost_per_pizza)
+    fornow2 = st.write("The total cost is ", (number_of_pizzas * cost_per_pizza)+ ((number_of_pizzas * cost_per_pizza) * 0.08))
 
     
