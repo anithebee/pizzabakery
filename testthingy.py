@@ -3,13 +3,14 @@ import streamlit as st
 st.set_page_config(page_title="Pizza Bakery", page_icon = ":pizza:")
 st.title("Papa's Pizzeria (walmart version)")
 st.subheader("Menu:pizza: || 1 Plain Pizza is 3 coins!")
-st.write("For the toppings: ")
+st.header("Toppings :chicken: :cheese_wedge: :olive: :pineapple:")
 st.write("(1) Pepperoni costs 3 coins.")
 st.write("(2) Olives cost 2 coins.")
 st.write("(3) Double Cheese costs 4 coins.")
 st.write("(4) Chicken costs 6 coins.")
 st.write("(5) Pineapple costs 2 coins.")
-st.write(":chicken: :cheese_wedge: :olive: :pineapple:")
+
+st.header("Place Your Order")
 
 number_of_pizzas  = st.number_input("How many pizzas do you want?")
 if number_of_pizzas<0:
@@ -79,6 +80,10 @@ if toppingschoice ==  4 and number_of_pizzas>1:
     st.write(number_of_pizzas, " Barbeque Chicken Pizzas coming right up!...")
 if toppingschoice ==  5 and number_of_pizzas>1:
     st.write(number_of_pizzas, " Pineapple Pizzas coming right up!...")
+
+st.subheader("Your Bill :money_with_wings:")
+st.write("Base Quantity: ", number_of_pizzas)
+st.write("Topping of Choice: ", toppingschoice)
 
 if toppingschoice != 0:
     subtotal = number_of_pizzas * (cost_per_pizza + extracost)
