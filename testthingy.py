@@ -30,23 +30,49 @@ toppingschoice = st.number_input("Which topping would you like? Select from 1-5.
 extracost = 0
 if toppingschoice ==  1 :
     extracost = toppingsprice[0]
-    st.write("yum. i like your taste. so basic but SO GOOD.")
+    st.write("valley girl in the restaurant: its okay to be basic, i literally could never though.")
 if toppingschoice ==  2 :
     extracost = toppingsprice[1]
-    st.write("underrated tbh.")
+    st.write("college student waiter: underrated tbh.")
 if toppingschoice ==  3 :
     extracost = toppingsprice[2]
-    st.write("you are 5 years old.")
+    st.write("judgy teenager in the restaurant: you are 5 years old.")
 if toppingschoice == 4 :
     extracost = toppingsprice[3]
-    st.write("lowkey my fav pizza is a good bbq chicken pizza ngl.")
+    st.write("14 year old boy in the restaurant: lowkey my fav pizza is a good bbq chicken pizza ngl.")
 if toppingschoice == 5 :
     extracost = toppingsprice[4]
-    st.write("PINEAPPLE IS SUCH A GOOD TOPPING, I DONT CARE WHAT ANYONE SAYS, BY GOD I SWEAR THAT THE SWEET BALANCES OUT ESPECIALLY IF THERE- *nervous breakdown*")
+    st.write("hippie waiter: PINEAPPLE IS SUCH A GOOD TOPPING, I DONT CARE WHAT ANYONE SAYS, BYGODISWEARTHATTHESWEETMAKESTHESAVOUR- *nervous breakdown*")
 if toppingschoice == 0:
     extracost = 0
 if toppingschoice<0 or toppingschoice>5:
-    st.write("Our waiter is very confused. Can you read? Please refresh, our waiter may ask for a raise :/")
+    st.write("Our waiter is very confused. Can you read?")
+
+if toppingschoice ==  0 and number_of_pizzas == 1:
+    st.write(number_of_pizzas, " Margherita Pizza coming right up!...")
+if toppingschoice ==  1 and number_of_pizzas == 1:
+    st.write(number_of_pizzas, " Pepperoni Pizza coming right up!...")
+if toppingschoice ==  2 and number_of_pizzas == 1:
+    st.write(number_of_pizzas, " Olive-Topped Pizza coming right up!...")
+if toppingschoice ==  3 and number_of_pizzas == 1:
+    st.write(number_of_pizzas, " Double-Cheese Pizza coming right up!...")
+if toppingschoice ==  4 and number_of_pizzas == 1:
+    st.write(number_of_pizzas, " Barbeque Chicken Pizza coming right up!...")
+if toppingschoice ==  5 and number_of_pizzas == 1:
+    st.write(number_of_pizzas, " Pineapple Pizza coming right up!...")
+
+if toppingschoice ==  0 and number_of_pizzas>1:
+    st.write(number_of_pizzas, " Margherita Pizzas coming right up!...")
+if toppingschoice ==  1 and number_of_pizzas>1:
+    st.write(number_of_pizzas, " Pepperoni Pizzas coming right up!...")
+if toppingschoice ==  2 and number_of_pizzas>1:
+    st.write(number_of_pizzas, " Olive-Topped Pizzas coming right up!...")
+if toppingschoice ==  3 and number_of_pizzas>1:
+    st.write(number_of_pizzas, " Double-Cheese Pizzas coming right up!...")
+if toppingschoice ==  4 and number_of_pizzas>1:
+    st.write(number_of_pizzas, " Barbeque Chicken Pizzas coming right up!...")
+if toppingschoice ==  5 and number_of_pizzas>1:
+    st.write(number_of_pizzas, " Pineapple Pizzas coming right up!...")
 
 if toppingschoice != 0:
     subtotal = number_of_pizzas * (cost_per_pizza * extracost)
