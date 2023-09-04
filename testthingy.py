@@ -83,7 +83,19 @@ if toppingschoice ==  5 and number_of_pizzas>1:
 
 st.subheader("Your Bill :money_with_wings:")
 st.write("Base Quantity: ", number_of_pizzas)
-st.write("Topping of Choice: ", toppings[toppingschoice])
+if toppingschoice == 1:
+    st.write("Topping: Pepperoni")
+if toppingschoice == 2:
+    st.write("Topping: Olives")
+if toppingschoice == 3:
+    st.write("Topping: Double Cheese")
+if toppingschoice == 4:
+    st.write("Topping: Chicken")
+if toppingschoice == 5:
+    st.write("Topping: Pineapple")
+if toppingschoice == 0:
+    st.write("Topping: N/A")
+
 
 if toppingschoice != 0:
     subtotal = number_of_pizzas * (cost_per_pizza + extracost)
