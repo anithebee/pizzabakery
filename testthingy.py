@@ -57,62 +57,63 @@ if toppingschoice != 0 and toppingschoice != 1 and toppingschoice != 2 and toppi
 
 #bill
 
-if toppingschoice ==  0 and number_of_pizzas == 1:
-    st.write(number_of_pizzas, " Margherita Pizza coming right up!...")
-if toppingschoice ==  1 and number_of_pizzas == 1:
-    st.write(number_of_pizzas, " Pepperoni Pizza coming right up!...")
-if toppingschoice ==  2 and number_of_pizzas == 1:
-    st.write(number_of_pizzas, " Olive-Topped Pizza coming right up!...")
-if toppingschoice ==  3 and number_of_pizzas == 1:
-    st.write(number_of_pizzas, " Double-Cheese Pizza coming right up!...")
-if toppingschoice ==  4 and number_of_pizzas == 1:
-    st.write(number_of_pizzas, " Barbeque Chicken Pizza coming right up!...")
-if toppingschoice ==  5 and number_of_pizzas == 1:
-    st.write(number_of_pizzas, " Pineapple Pizza coming right up!...")
+if number_of_pizzas!=0:
+    if toppingschoice ==  0 and number_of_pizzas == 1:
+        st.write(number_of_pizzas, " Margherita Pizza coming right up!...")
+    if toppingschoice ==  1 and number_of_pizzas == 1:
+        st.write(number_of_pizzas, " Pepperoni Pizza coming right up!...")
+    if toppingschoice ==  2 and number_of_pizzas == 1:
+        st.write(number_of_pizzas, " Olive-Topped Pizza coming right up!...")
+    if toppingschoice ==  3 and number_of_pizzas == 1:
+        st.write(number_of_pizzas, " Double-Cheese Pizza coming right up!...")
+    if toppingschoice ==  4 and number_of_pizzas == 1:
+        st.write(number_of_pizzas, " Barbeque Chicken Pizza coming right up!...")
+    if toppingschoice ==  5 and number_of_pizzas == 1:
+        st.write(number_of_pizzas, " Pineapple Pizza coming right up!...")
 
-if toppingschoice ==  0 and number_of_pizzas>1:
-    st.write(number_of_pizzas, " Margherita Pizzas coming right up!...")
-if toppingschoice ==  1 and number_of_pizzas>1:
-    st.write(number_of_pizzas, " Pepperoni Pizzas coming right up!...")
-if toppingschoice ==  2 and number_of_pizzas>1:
-    st.write(number_of_pizzas, " Olive-Topped Pizzas coming right up!...")
-if toppingschoice ==  3 and number_of_pizzas>1:
-    st.write(number_of_pizzas, " Double-Cheese Pizzas coming right up!...")
-if toppingschoice ==  4 and number_of_pizzas>1:
-    st.write(number_of_pizzas, " Barbeque Chicken Pizzas coming right up!...")
-if toppingschoice ==  5 and number_of_pizzas>1:
-    st.write(number_of_pizzas, " Pineapple Pizzas coming right up!...")
+    if toppingschoice ==  0 and number_of_pizzas>1:
+        st.write(number_of_pizzas, " Margherita Pizzas coming right up!...")
+    if toppingschoice ==  1 and number_of_pizzas>1:
+        st.write(number_of_pizzas, " Pepperoni Pizzas coming right up!...")
+    if toppingschoice ==  2 and number_of_pizzas>1:
+         st.write(number_of_pizzas, " Olive-Topped Pizzas coming right up!...")
+    if toppingschoice ==  3 and number_of_pizzas>1:
+        st.write(number_of_pizzas, " Double-Cheese Pizzas coming right up!...")
+    if toppingschoice ==  4 and number_of_pizzas>1:
+        st.write(number_of_pizzas, " Barbeque Chicken Pizzas coming right up!...")
+    if toppingschoice ==  5 and number_of_pizzas>1:
+        st.write(number_of_pizzas, " Pineapple Pizzas coming right up!...")
 
-st.subheader("Your Bill :money_with_wings:")
-st.write("Base Pizza Price: 3")
-if toppingschoice == 1:
-    st.write(":right-arrow: Topping: Pepperoni, Price: 3")
-if toppingschoice == 2:
-    st.write(":right-arrow: Topping: Olives, Price: 2")
-if toppingschoice == 3:
-    st.write(":right-arrow: Topping: Double Cheese, Price: 4")
-if toppingschoice == 4:
-    st.write(":right-arrow: Topping: Chicken, Price: 6")
-if toppingschoice == 5:
-    st.write(":right-arrow: Topping: Pineapple, Price: 2")
-if toppingschoice == 0:
-    st.write(":right-arrow: Topping: N/A, Price: N/A")
+    st.subheader("Your Bill :money_with_wings:")
+    st.write(":right_arrow: Base Pizza Price: 3")
+    if toppingschoice == 1:
+        st.write(":right_arrow: Topping: Pepperoni, Price: 3")
+    if toppingschoice == 2:
+        st.write(":right_arrow: Topping: Olives, Price: 2")
+    if toppingschoice == 3:
+        st.write(":right_arrow: Topping: Double Cheese, Price: 4")
+    if toppingschoice == 4:
+        st.write(":right_arrow: Topping: Chicken, Price: 6")
+    if toppingschoice == 5:
+        st.write(":right_arrow: Topping: Pineapple, Price: 2")
+    if toppingschoice == 0:
+        st.write(":right_arrow: Topping: N/A, Price: N/A")
     
-if toppingschoice!=0:
-    st.write(":right-arrow: Total Base Price: ", cost_per_pizza + extracost)
-    st.write(":right-arrow: Quantity: ", number_of_pizzas)
+    if toppingschoice!=0:
+        st.write(":right_arrow: Total Base Price: ", cost_per_pizza + extracost)
+        st.write(":right_arrow: Quantity: ", number_of_pizzas)
 
-if toppingschoice != 0:
-    subtotal = number_of_pizzas * (cost_per_pizza + extracost)
-    st.write("Subtotal: ", subtotal)
-    tax_rate = 0.08
-    sales_tax = subtotal * tax_rate
-    total = subtotal + sales_tax
-    fornow3 =  st.write("Total (including tax): ", total)
-    fornow4 = st.write("/n This includes ", subtotal, " coins for the food and  ", sales_tax, " coins in sales tax.")
+    if toppingschoice != 0:
+        subtotal = number_of_pizzas * (cost_per_pizza + extracost)
+        st.write("Subtotal: ", subtotal)
+        tax_rate = 0.08
+        sales_tax = subtotal * tax_rate
+        total = subtotal + sales_tax
+        fornow3 =  st.write("Total (including tax): ", total)
+        fornow4 = st.write("This includes ", subtotal, " coins for the food and  ", sales_tax, " coins in sales tax.")
 
-if toppingschoice == 0:
-    fornow1 = st.write("The cost before tax is: ", number_of_pizzas * cost_per_pizza)
-    fornow2 = st.write("The total cost is ", (number_of_pizzas * cost_per_pizza)+ ((number_of_pizzas * cost_per_pizza) * 0.08))
+    if toppingschoice == 0:
+        fornow1 = st.write("The cost before tax is: ", number_of_pizzas * cost_per_pizza)
+        fornow2 = st.write("The total cost is ", (number_of_pizzas * cost_per_pizza)+ ((number_of_pizzas * cost_per_pizza) * 0.08))
 
     
