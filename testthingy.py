@@ -5,7 +5,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Pizza Bakery", page_icon = ":pizza:")
 st.title("Papa's Pizzeria:pizza: (walmart version)")
-st.header("Menu || Plain Pizzas cost 3 coins.)
+st.header("Menu || Plain Pizzas cost 3 coins.")
 st.subheader("Toppings :chicken: :cheese_wedge: :olive: :pineapple:")
 st.write("(1) Pepperoni costs 3 coins.")
 st.write("(2) Olives cost 2 coins.")
