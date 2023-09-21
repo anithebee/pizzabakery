@@ -101,8 +101,8 @@ if number_of_pizzas!=0:
         st.write("--->Topping: N/A, Price: N/A")
     
     if toppingschoice!=0:
-        st.write(":rightarrow: Total Base Price: ", cost_per_pizza + extracost)
-        st.write(":rightarrow: Quantity: ", number_of_pizzas)
+        st.write("--->Total Base Price: ", cost_per_pizza + extracost)
+        st.write("--->Quantity: ", number_of_pizzas)
 
     if toppingschoice != 0:
         subtotal = number_of_pizzas * (cost_per_pizza + extracost)
