@@ -2,6 +2,7 @@ import streamlit as st
 
 #page config
 
+
 st.set_page_config(page_title="Pizza Bakery", page_icon = ":pizza:")
 st.title("Papa's Pizzeria (walmart version)")
 st.header("Menu:pizza: || 1 Plain Pizza is 3 coins!")
@@ -32,7 +33,7 @@ cost_per_pizza = 3
 toppings = ["Pepperoni", "Olives", "Double Cheese", "Chicken", "Pineapple"]
 toppingsprice = [3, 2, 4, 6, 2]
 
-toppingschoice = st.number_input("Which topping would you like? Select from 1-5. If you do not want a topping, click 0.")
+toppingschoice = st.number_input("Would you like a topping? If so, select from 1-5. If you do not want a topping, proceed to the bill.")
 
 extracost = 0
 if toppingschoice ==  1 :
