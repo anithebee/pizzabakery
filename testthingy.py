@@ -86,19 +86,19 @@ if number_of_pizzas!=0:
         st.write(number_of_pizzas, " Pineapple Pizzas coming right up!...")
 
     st.subheader("Your Bill :money_with_wings:")
-    st.write(":rightarrow: Base Pizza Price: 3")
+    st.write("--->Base Pizza Price: 3")
     if toppingschoice == 1:
-        st.write(":rightarrow: Topping: Pepperoni, Price: 3")
+        st.write("--->Topping: Pepperoni, Price: 3")
     if toppingschoice == 2:
-        st.write(":rightarrow: Topping: Olives, Price: 2")
+        st.write("--->Topping: Olives, Price: 2")
     if toppingschoice == 3:
-        st.write(":rightarrow: Topping: Double Cheese, Price: 4")
+        st.write("--->Topping: Double Cheese, Price: 4")
     if toppingschoice == 4:
-        st.write(":rightarrow: Topping: Chicken, Price: 6")
+        st.write("--->Topping: Chicken, Price: 6")
     if toppingschoice == 5:
-        st.write(":rightarrow: Topping: Pineapple, Price: 2")
+        st.write("--->Topping: Pineapple, Price: 2")
     if toppingschoice == 0:
-        st.write(":rightarrow: Topping: N/A, Price: N/A")
+        st.write("--->Topping: N/A, Price: N/A")
     
     if toppingschoice!=0:
         st.write(":rightarrow: Total Base Price: ", cost_per_pizza + extracost)
